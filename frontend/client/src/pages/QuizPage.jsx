@@ -43,6 +43,33 @@ const QuizPage = () => {
 }, []);
 
 
+
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Disable Ctrl+Shift+C, Ctrl+Shift+I, F12
+      if (
+        (e.ctrlKey && e.shiftKey && e.code === "KeyC") || // Ctrl+Shift+C
+        (e.ctrlKey && e.shiftKey && e.code === "KeyI") || // Ctrl+Shift+I
+        e.code === "F12" // F12
+      ) {
+        e.preventDefault();
+        alert("Inspecting is disabled on this page!");
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+
+
+
+
+
   // Timer countdown
 // Timer countdown
 useEffect(() => {
