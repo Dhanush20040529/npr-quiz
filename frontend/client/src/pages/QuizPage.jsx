@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { questions } from "../data/questions";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_SERVER_URL;
+
 const QuizPage = () => {
   const { state: student } = useLocation();
   const navigate = useNavigate();
@@ -79,7 +81,7 @@ useEffect(() => {
 
   try {
     // Save score in DB
-    await axios.put(`http://localhost:3500/api/student/${student.studentId}`, {
+    await axios.put(`${API_URL}/api/student/${student.studentId}`, {
       score,
     });
 

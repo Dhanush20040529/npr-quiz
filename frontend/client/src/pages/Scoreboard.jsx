@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+
+const API_URL = import.meta.env.VITE_SERVER_URL;
+
 const Scoreboard = () => {
   const [scores, setScores] = useState([]);
   const navigate = useNavigate()
@@ -9,7 +12,7 @@ const Scoreboard = () => {
   useEffect(() => {
     const fetchScores = async () => {
       try {
-        const { data } = await axios.get("http://localhost:3500/api/quiz/scoreboard");
+        const { data } = await axios.get(/* "http://localhost:3500/api/quiz/scoreboard" */ `${API_URL}/api/quiz/scoreboard`);
         setScores(data);
       } catch (err) {
         console.error(err);

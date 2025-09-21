@@ -39,6 +39,9 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
 
+const API_URL = import.meta.env.VITE_SERVER_URL;
+console.log(API_URL)
+
 const StudentForm = () => {
   const navigate = useNavigate();
 
@@ -67,7 +70,7 @@ const StudentForm = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:3500/api/student", form);
+      const res = await axios.post(/* "http://localhost:3500/api/student"  */`${API_URL}/api/student`, form);
       // redirect to quiz page with student data
       navigate("/quiz", { state: { studentId: res.data._id } });
       console.log(res.data)
