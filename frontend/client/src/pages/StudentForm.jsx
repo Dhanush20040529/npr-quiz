@@ -94,99 +94,111 @@ const StudentForm = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center p-8">
-      <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-lg w-full ">
-        <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8 tracking-wide">
-          Student Registration
-        </h1>
-        {error && <p className="text-red-500 text-center mb-6 font-medium">{error}</p>}
+   <div className="bg-gray-100 min-h-screen flex items-center justify-center p-8">
+  <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-lg w-full">
+    <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8 tracking-wide">
+      Student Registration
+    </h1>
+    {error && <p className="text-red-500 text-center mb-6 font-medium">{error}</p>}
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="relative">
-            <input
-              type="text"
-              name="name"
-              placeholder=" "
-              value={form.name}
-              onChange={handleChange}
-              required
-              className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-            />
-            <label
-              htmlFor="name"
-              className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
-              peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-              peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
-            >
-              Full Name
-            </label>
-          </div>
-          <div className="relative">
-            <input
-              type="text"
-              name="department"
-              placeholder=" "
-              value={form.department}
-              onChange={handleChange}
-              required
-              className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-            />
-            <label
-              htmlFor="department"
-              className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
-              peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-              peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
-            >
-              Department
-            </label>
-          </div>
-          <div className="relative">
-            <input
-              type="text"
-              name="year"
-              placeholder=" "
-              value={form.year}
-              onChange={handleChange}
-              required
-              className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-            />
-            <label
-              htmlFor="year"
-              className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
-              peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-              peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
-            >
-              Year
-            </label>
-          </div>
-          <div className="relative">
-            <input
-              type="email"
-              name="email"
-              placeholder=" "
-              value={form.email}
-              onChange={handleChange}
-              required
-              className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-            />
-            <label
-              htmlFor="email"
-              className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
-              peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
-              peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
-            >
-              Email
-            </label>
-          </div>
-          <button
-            type="submit"
-            className="w-full py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105"
-          >
-            Start Quiz 🚀
-          </button>
-        </form>
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="relative">
+        <input
+          type="text"
+          name="name"
+          placeholder=" "
+          value={form.name}
+          onChange={handleChange}
+          required
+          className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+        />
+        <label
+          htmlFor="name"
+          className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
+          peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
+          peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
+        >
+          Full Name
+        </label>
       </div>
-    </div>
+      
+      {/* Updated Department Dropdown */}
+      <div className="relative">
+        <select
+          name="department"
+          value={form.department}
+          onChange={handleChange}
+          required
+          className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors appearance-none"
+        >
+          <option value="" disabled hidden>
+            Select Department
+          </option>
+          <option value="IT">IT</option>
+          
+        </select>
+        {/* Custom arrow for dropdown */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 6.757 7.586 5.343 9l4.243 4.243z" />
+          </svg>
+        </div>
+        <label
+          htmlFor="department"
+          className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
+          peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
+        >
+          Department
+        </label>
+      </div>
+
+      <div className="relative">
+        <input
+          type="text"
+          name="year"
+          placeholder=" "
+          value={form.year}
+          onChange={handleChange}
+          required
+          className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+        />
+        <label
+          htmlFor="year"
+          className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
+          peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
+          peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
+        >
+          Year
+        </label>
+      </div>
+      <div className="relative">
+        <input
+          type="email"
+          name="email"
+          placeholder=" "
+          value={form.email}
+          onChange={handleChange}
+          required
+          className="peer w-full p-4 text-gray-800 border border-gray-300 rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+        />
+        <label
+          htmlFor="email"
+          className="absolute left-4 -top-3 text-sm text-gray-600 bg-white px-1 transition-all
+          peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4
+          peer-focus:-top-3 peer-focus:text-blue-600 peer-focus:text-sm"
+        >
+          Email
+        </label>
+      </div>
+      <button
+        type="submit"
+        className="w-full py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105"
+      >
+        Start Quiz 🚀
+      </button>
+    </form>
+  </div>
+</div>
   );
 };
 

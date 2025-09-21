@@ -153,6 +153,7 @@ useEffect(() => {
               <label key={i} className="flex items-center p-3 rounded-lg cursor-pointer transition-colors duration-200 hover:bg-gray-200">
                 <input
                   type="radio"
+                  required
                   name={`question-${index}`}
                   value={opt}
                   checked={answers[index] === opt}
