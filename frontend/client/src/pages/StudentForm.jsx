@@ -39,6 +39,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
 
+import logo from "../assets/image.png"
+
 const API_URL = import.meta.env.VITE_SERVER_URL;
 console.log(API_URL)
 
@@ -94,7 +96,10 @@ const StudentForm = () => {
   };
 
   return (
-   <div className="bg-gray-100 min-h-screen flex items-center justify-center p-8">
+   <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-around p-8 gap-6">
+    <div className="logo">
+        <img src={logo} alt="logo" width={600} height={160}/>
+    </div>
   <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-lg w-full">
     <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8 tracking-wide">
       Student Registration
