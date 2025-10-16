@@ -1,253 +1,252 @@
 export const questions = [
   {
-    "question": "Which hashing algorithm is considered broken due to collision vulnerabilities?",
-    "options": ["SHA-256", "SHA-1", "MD5", "SHA-3"],
-    "answer": "SHA-1"
+    question: "Which layer of the OSI model is responsible for logical addressing and routing?",
+    options: ["Physical", "Network", "Transport", "Data Link"],
+    answer: "Network"
   },
   {
-    "question": "Which Linux file shows system startup messages?",
-    "options": ["/var/log/syslog", "/etc/hosts", "/var/log/shadow", "/etc/init.d"],
-    "answer": "/var/log/syslog"
+    question: "Which network topology connects every node to a single central node?",
+    options: ["Ring", "Mesh", "Star", "Bus"],
+    answer: "Star"
   },
   {
-    "question": "What is the default port for DNS?",
-    "options": ["80", "25", "53", "443"],
-    "answer": "53"
+    question: "Which OSI layer is responsible for end-to-end communication and reliability?",
+    options: ["Transport", "Network", "Session", "Application"],
+    answer: "Transport"
   },
   {
-    "question": "Which Nmap option enables aggressive timing without stealth?",
-    "options": ["-T1", "-T2", "-T4", "-T0"],
-    "answer": "-T4"
+    question: "In the TCP three-way handshake, the sequence is:",
+    options: ["SYN, SYN-ACK, ACK", "SYN-ACK, SYN, ACK", "ACK, SYN, SYN-ACK", "SYN, ACK, FIN"],
+    answer: "SYN, SYN-ACK, ACK"
   },
   {
-    "question": "In Linux, what does the grep -i option do?",
-    "options": ["Count matches", "Case-insensitive search", "Invert match", "Show line numbers"],
-    "answer": "Case-insensitive search"
+    question: "Which IP address class has default subnet mask 255.0.0.0?",
+    options: ["Class A", "Class B", "Class C", "Class D"],
+    answer: "Class A"
   },
   {
-    "question": "Which tool is commonly used for password brute forcing network services?",
-    "options": ["Hydra", "Netcat", "Wireshark", "Nmap"],
-    "answer": "Hydra"
+    question: "Which port number is standard for HTTPS?",
+    options: ["20", "80", "443", "22"],
+    answer: "443"
   },
   {
-    "question": "Which attack is mitigated by enabling 802.1X port-based authentication?",
-    "options": ["SQL Injection", "Man-in-the-Middle", "ARP Spoofing", "Buffer Overflow"],
-    "answer": "Man-in-the-Middle"
+    question: "Which protocol is connectionless and best-effort delivery?",
+    options: ["TCP", "UDP", "HTTP", "SSH"],
+    answer: "UDP"
   },
   {
-    "question": "Which Linux command checks current disk partitions?",
-    "options": ["df -h", "lsblk", "fdisk -h", "mount"],
-    "answer": "lsblk"
+    question: "Which component translates domain names to IP addresses?",
+    options: ["DHCP server", "DNS server", "Router", "Proxy"],
+    answer: "DNS server"
   },
   {
-    "question": "Which port does HTTPS use by default?",
-    "options": ["22", "80", "443", "8080"],
-    "answer": "443"
+    question: "Which protocol is used by routers to exchange routing information dynamically?",
+    options: ["DNS", "RIP", "SMTP", "FTP"],
+    answer: "RIP"
   },
   {
-    "question": "What does scp do in Linux?",
-    "options": ["Securely copy files between systems", "Scan ports", "Change file permissions", "Compress files"],
-    "answer": "Securely copy files between systems"
+    question: "Which topology provides redundant paths and is most fault-tolerant?",
+    options: ["Star", "Bus", "Ring", "Mesh"],
+    answer: "Mesh"
   },
   {
-    "question": "Which type of firewall inspects traffic at the application layer?",
-    "options": ["Packet-filter firewall", "Proxy firewall", "Circuit-level gateway", "Stateless firewall"],
-    "answer": "Proxy firewall"
+    question: "In the CIA triad, what does 'I' stand for?",
+    options: ["Identification", "Integrity", "Isolation", "Inspection"],
+    answer: "Integrity"
   },
   {
-    "question": "Which tool is used for directory brute-forcing on websites?",
-    "options": ["Gobuster", "Wireshark", "Hydra", "Nikto"],
-    "answer": "Gobuster"
+    question: "Which phase of ethical hacking generally comes first?",
+    options: ["Exploitation", "Reconnaissance (Footprinting)", "Privilege Escalation", "Reporting"],
+    answer: "Reconnaissance (Footprinting)"
   },
   {
-    "question": "Which Linux command shows memory usage?",
-    "options": ["free -m", "ls -lh", "ps aux", "du -h"],
-    "answer": "free -m"
+    question: "What is the main goal of a Red Team?",
+    options: ["Build patches", "Defend systems in real time", "Emulate attackers and test defenses", "Monitor network logs"],
+    answer: "Emulate attackers and test defenses"
   },
   {
-    "question": "Which vulnerability allows attackers to inject malicious SQL queries?",
-    "options": ["Command Injection", "Cross-Site Scripting", "SQL Injection", "Path Traversal"],
-    "answer": "SQL Injection"
+    question: "Which step is NOT part of the Cyber Kill Chain?",
+    options: ["Reconnaissance", "Weaponization", "Containment", "Command & Control"],
+    answer: "Containment"
   },
   {
-    "question": "Which protocol does Ping use?",
-    "options": ["TCP", "ICMP", "UDP", "ARP"],
-    "answer": "ICMP"
+    question: "Purple Team typically means:",
+    options: ["Only attackers", "Only defenders", "Collaboration between Red and Blue teams", "Legal compliance team"],
+    answer: "Collaboration between Red and Blue teams"
   },
   {
-    "question": "What does the Metasploit exploit/multi/handler module do?",
-    "options": ["Creates phishing pages", "Listens for reverse shells", "Cracks passwords", "Scans open ports"],
-    "answer": "Listens for reverse shells"
+    question: "Which cybersecurity domain focuses on preventing unauthorized data disclosure?",
+    options: ["Availability", "Integrity", "Confidentiality", "Usability"],
+    answer: "Confidentiality"
   },
   {
-    "question": "Which Linux command shows currently logged-in users?",
-    "options": ["who", "id", "ps", "uname"],
-    "answer": "who"
+    question: "Which of the following is an ethical rule for penetration testers?",
+    options: ["Testing production without permission", "Using obtained credentials for other work", "Having explicit written authorization before testing", "Publishing client data after testing"],
+    answer: "Having explicit written authorization before testing"
   },
   {
-    "question": "Which tool is used for wireless network packet sniffing?",
-    "options": ["Aircrack-ng", "Hydra", "Nikto", "Gobuster"],
-    "answer": "Aircrack-ng"
+    question: "Which one of these is NOT a domain in cybersecurity?",
+    options: ["Network Security", "Application Security", "Physical Security", "Data Cooking"],
+    answer: "Data Cooking"
   },
   {
-    "question": "What is the purpose of OSINT in reconnaissance?",
-    "options": ["Exploiting firewalls", "Gathering public information", "Cracking passwords", "Deploying persistence"],
-    "answer": "Gathering public information"
+    question: "Which phase produces the final remediation/report in ethical hacking?",
+    options: ["Scanning", "Exploitation", "Reporting", "Enumeration"],
+    answer: "Reporting"
   },
   {
-    "question": "Which vulnerability occurs when user input is executed as code?",
-    "options": ["Path Traversal", "Command Injection", "XSS", "CSRF"],
-    "answer": "Command Injection"
+    question: "Which team handles incident response and defense?",
+    options: ["Red Team", "Blue Team", "Grey Team", "Purple Team"],
+    answer: "Blue Team"
   },
   {
-    "question": "What does the Linux chmod 644 file command do?",
-    "options": ["Owner full, group/others read-only", "Full access to everyone", "Owner read-only", "Hidden file"],
-    "answer": "Owner full, group/others read-only"
+    question: "In Linux, what permission bits does `rwxr-xr--` give the group?",
+    options: ["Read, write, execute", "Read, execute", "Read only", "Execute only"],
+    answer: "Read, execute"
   },
   {
-    "question": "Which Nmap scan type is used for UDP services?",
-    "options": ["-sS", "-sT", "-sU", "-sA"],
-    "answer": "-sU"
+    question: "What command shows current directory contents with detailed info in Linux?",
+    options: ["pwd", "ls -l", "cd", "chmod"],
+    answer: "ls -l"
   },
   {
-    "question": "Which protocol is commonly exploited in DNS cache poisoning?",
-    "options": ["TCP", "UDP", "ICMP", "ARP"],
-    "answer": "UDP"
+    question: "Where is the root user's home directory typically located?",
+    options: ["/home/root", "/root", "/usr/root", "/etc/root"],
+    answer: "/root"
   },
   {
-    "question": "Which Linux command shows system uptime?",
-    "options": ["date", "uptime", "who", "last"],
-    "answer": "uptime"
+    question: "What does `chmod 644 file.txt` set for owner/group/others?",
+    options: ["Owner read/write, group read, others read", "Owner read-only, group read-only, others read-only", "Owner full, group full, others full", "Owner execute, group execute, others execute"],
+    answer: "Owner read/write, group read, others read"
   },
   {
-    "question": "Which cryptographic concept ensures that data is not modified?",
-    "options": ["Confidentiality", "Integrity", "Availability", "Authentication"],
-    "answer": "Integrity"
+    question: "Which Linux command is used to change ownership of a file?",
+    options: ["chmod", "chown", "mv", "cp"],
+    answer: "chown"
   },
   {
-    "question": "Which port is used by SMTP?",
-    "options": ["25", "21", "22", "110"],
-    "answer": "25"
+    question: "Which activity is passive reconnaissance?",
+    options: ["Scanning open ports with Nmap directly against target", "Reading publicly available WHOIS and DNS records", "Attempting SQL injection on target forms", "Brute-forcing SSH"],
+    answer: "Reading publicly available WHOIS and DNS records"
   },
   {
-    "question": "Which Linux command kills a process by PID?",
-    "options": ["kill -9 PID", "stop PID", "end PID", "ps -k"],
-    "answer": "kill -9 PID"
+    question: "WHOIS lookup provides information about:",
+    options: ["Running services on the machine", "Domain registration and registrant contact details", "User passwords", "Open ports"],
+    answer: "Domain registration and registrant contact details"
   },
   {
-    "question": "Which vulnerability allows injecting malicious scripts into web pages?",
-    "options": ["SQL Injection", "XSS", "CSRF", "RCE"],
-    "answer": "XSS"
+    question: "Which tool is commonly used for DNS and network reconnaissance?",
+    options: ["Nmap", "dig", "Metasploit", "John the Ripper"],
+    answer: "dig"
   },
   {
-    "question": "Which tool is used to brute-force SSH login?",
-    "options": ["Hydra", "Nmap", "Wireshark", "Gobuster"],
-    "answer": "Hydra"
+    question: "Social engineering reconnaissance aimed at a person often starts with:",
+    options: ["Scanning ports", "Collecting publicly available social media info", "Malware deployment", "Cryptanalysis"],
+    answer: "Collecting publicly available social media info"
   },
   {
-    "question": "Which Linux command extracts archive.tar.gz?",
-    "options": ["tar -xvzf archive.tar.gz", "unzip archive.tar.gz", "gzip -d archive.tar.gz", "extract archive.tar.gz"],
-    "answer": "tar -xvzf archive.tar.gz"
+    question: "Which technique helps discover subdomains of a target domain?",
+    options: ["Port forwarding", "Subdomain enumeration (DNS brute-force)", "File permission change", "Packet sniffing"],
+    answer: "Subdomain enumeration (DNS brute-force)"
   },
   {
-    "question": "Which port does FTP use by default?",
-    "options": ["20/21", "22", "25", "110"],
-    "answer": "20/21"
+    question: "Port 22 is commonly used by which service?",
+    options: ["FTP", "SSH", "HTTP", "SMTP"],
+    answer: "SSH"
   },
   {
-    "question": "Which attack involves session hijacking by stealing cookies?",
-    "options": ["SQL Injection", "XSS", "DoS", "ARP Spoofing"],
-    "answer": "XSS"
+    question: "Which Nmap switch is used for service version detection?",
+    options: ["-sV", "-O", "-A", "-Pn"],
+    answer: "-sV"
   },
   {
-    "question": "Which Linux command displays CPU info?",
-    "options": ["lscpu", "free -m", "uname -a", "top"],
-    "answer": "lscpu"
+    question: "Nmap’s `-sU` option runs which type of scan?",
+    options: ["TCP SYN scan", "UDP scan", "Version detection", "OS detection"],
+    answer: "UDP scan"
   },
   {
-    "question": "Which encryption mode is vulnerable due to pattern leaks?",
-    "options": ["CBC", "ECB", "GCM", "CTR"],
-    "answer": "ECB"
+    question: "Which protocol is used to transfer files in plain text (insecure) over port 21?",
+    options: ["SFTP", "FTP", "FTPS", "SCP"],
+    answer: "FTP"
   },
   {
-    "question": "Which command in Nmap enables traceroute?",
-    "options": ["--traceroute", "-R", "-T", "-O"],
-    "answer": "--traceroute"
+    question: "Which port number is used by Telnet?",
+    options: ["22", "23", "25", "110"],
+    answer: "23"
   },
   {
-    "question": "Which protocol does SNMP use?",
-    "options": ["TCP", "UDP", "ICMP", "ARP"],
-    "answer": "UDP"
+    question: "What does a “ping” command primarily test?",
+    options: ["Application availability", "Network connectivity and latency", "File permissions", "Firewall rules"],
+    answer: "Network connectivity and latency"
   },
   {
-    "question": "Which Linux command shows system kernel version?",
-    "options": ["uname -r", "lsb_release -a", "cat /proc/version", "hostname"],
-    "answer": "uname -r"
+    question: "Which command shows open network connections on Linux/Windows?",
+    options: ["ping", "netstat", "chmod", "df"],
+    answer: "netstat"
   },
   {
-    "question": "Which malware type encrypts files and demands ransom?",
-    "options": ["Worm", "Trojan", "Ransomware", "Rootkit"],
-    "answer": "Ransomware"
+    question: "Which port is default for HTTP?",
+    options: ["443", "21", "80", "25"],
+    answer: "80"
   },
   {
-    "question": "Which attack exploits weak input validation in file uploads?",
-    "options": ["Path Traversal", "File Upload Vulnerability", "CSRF", "XSS"],
-    "answer": "File Upload Vulnerability"
+    question: "What does the `-O` flag in Nmap do?",
+    options: ["Perform OS detection", "Perform UDP scan", "Display only open ports", "Output XML format"],
+    answer: "Perform OS detection"
   },
   {
-    "question": "Which Linux command shows open ports and listening services?",
-    "options": ["netstat -tuln", "ps -ef", "ifconfig", "route -n"],
-    "answer": "netstat -tuln"
+    question: "What does SMB primarily allow?",
+    options: ["File and printer sharing", "Email transfer", "VPN connections", "Remote desktop"],
+    answer: "File and printer sharing"
   },
   {
-    "question": "Which attack is mitigated by HTTPS with TLS?",
-    "options": ["ARP Poisoning", "Man-in-the-Middle", "SQL Injection", "XSS"],
-    "answer": "Man-in-the-Middle"
+    question: "Privilege escalation on a system means:",
+    options: ["Dropping to guest account", "Gaining higher-level permissions (e.g., root/administrator)", "Changing network topology", "Removing files only"],
+    answer: "Gaining higher-level permissions (e.g., root/administrator)"
   },
   {
-    "question": "Which protocol is used by Ping of Death attack?",
-    "options": ["TCP", "ICMP", "UDP", "ARP"],
-    "answer": "ICMP"
+    question: "Which tool is widely used for post-exploitation and maintaining access on Windows?",
+    options: ["netstat", "Metasploit (Meterpreter)", "dig", "nslookup"],
+    answer: "Metasploit (Meterpreter)"
   },
   {
-    "question": "Which tool is best for subdomain enumeration?",
-    "options": ["Sublist3r", "Gobuster", "Nmap", "Hydra"],
-    "answer": "Sublist3r"
+    question: "A common way to maintain persistent access on a Linux server is to:",
+    options: ["Change directory names", "Add a cron job or authorized SSH key for a backdoor account", "Reboot the server daily", "Disable SSH"],
+    answer: "Add a cron job or authorized SSH key for a backdoor account"
   },
   {
-    "question": "Which Linux command displays user’s group memberships?",
-    "options": ["groups", "whoami", "id", "uname"],
-    "answer": "groups"
+    question: "Which command in Windows lists all user accounts?",
+    options: ["net user", "ipconfig", "nslookup", "whoami"],
+    answer: "net user"
   },
   {
-    "question": "Which Nmap option performs a TCP ACK scan?",
-    "options": ["-sS", "-sT", "-sA", "-sF"],
-    "answer": "-sA"
+    question: "What’s the main goal of an exploit?",
+    options: ["Gain unauthorized access or control", "Encrypt files", "Stop network", "Patch system"],
+    answer: "Gain unauthorized access or control"
   },
   {
-    "question": "Which protocol is targeted in ARP spoofing?",
-    "options": ["Layer 3", "Layer 2", "Layer 4", "Layer 7"],
-    "answer": "Layer 2"
+    question: "Which OWASP Top 10 category involves improperly validated input that allows attacker-supplied scripts to run in victims’ browsers?",
+    options: ["SQL Injection", "Broken Authentication", "Cross-Site Scripting (XSS)", "Security Misconfiguration"],
+    answer: "Cross-Site Scripting (XSS)"
   },
   {
-    "question": "Which Linux command appends output to a file?",
-    "options": [">", ">>", "|", "&"],
-    "answer": ">>"
+    question: "SQL Injection attacks target:",
+    options: ["Client-side JavaScript execution only", "Server-side database queries when inputs are not sanitized", "Network switches", "DNS records"],
+    answer: "Server-side database queries when inputs are not sanitized"
   },
   {
-    "question": "Which type of malware hides itself inside legitimate processes?",
-    "options": ["Worm", "Rootkit", "Trojan", "Virus"],
-    "answer": "Rootkit"
+    question: "IDOR stands for:",
+    options: ["Insecure Direct Object Reference", "Internal Domain Object Resource", "Internet Data Of Requests", "Indexed Data Object Retrieval"],
+    answer: "Insecure Direct Object Reference"
   },
   {
-    "question": "Which Nmap option increases verbosity of output?",
-    "options": ["-v", "-A", "-O", "-sV"],
-    "answer": "-v"
+    question: "Which mitigation helps prevent arbitrary file upload vulnerabilities?",
+    options: ["Validating file type, storing uploads outside web root, and renaming files", "Disabling authentication", "Using HTTP instead of HTTPS", "Allowing all file types and storing them in web root"],
+    answer: "Validating file type, storing uploads outside web root, and renaming files"
   },
   {
-    "question": "Which security measure blocks email spoofing by validating sending IPs?",
-    "options": ["SPF", "SSL", "TLS", "HTTPS"],
-    "answer": "SPF"
+    question: "Account hijacking typically involves:",
+    options: ["Finding open ports only", "Compromising user credentials or session tokens to impersonate users", "Changing topology of network", "Upgrading server OS"],
+    answer: "Compromising user credentials or session tokens to impersonate users"
   }
-]
-
+];

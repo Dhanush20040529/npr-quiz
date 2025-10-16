@@ -84,11 +84,10 @@ const StudentForm = () => {
       );
 
     } catch (err) {
-      if (err.response && err.response.status === 500) {
-        setError(err.response.data.message);
-        setError("Email already registered");
-        console.log("done") // "Email already registered"
-      } else {
+       if(err.response){
+       console.log(err.response.data.message)
+       setError(err.response.data.message)
+     } else {
         setError("Email already registered.");
         console.log(err.response,err.response.status,err.response.message)
       }
@@ -172,7 +171,7 @@ const StudentForm = () => {
       Select Year
     </option>
     <option value="3">3</option>
-    <option value="4">4</option>
+    
   </select>
   {/* Custom arrow for dropdown */}
   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
