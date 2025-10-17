@@ -29,7 +29,7 @@ const Scoreboard = () => {
   <div className="bg-gray-900 min-h-screen p-8 flex items-center justify-center">
   <div className="bg-gray-800 rounded-3xl p-8 shadow-2xl max-w-4xl w-full transform transition-all duration-500 hover:scale-[1.01]">
     <div className="text-center mb-8">
-      <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 tracking-wider mb-2">
+      <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 tracking-wider mb-2 max-sm:text-3xl">
         Leaderboard
       </h1>
       <p className="text-gray-400 text-lg">Top performers from the recent quiz</p>
