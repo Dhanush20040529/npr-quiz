@@ -35,7 +35,7 @@ const Scoreboard = () => {
       <p className="text-gray-400 text-lg">Top performers from the recent quiz</p>
     </div>
 
-    <div className="overflow-hidden rounded-xl shadow-lg">
+    <div className="overflow-hidden rounded-xl shadow-lg overflow-x-scroll">
       <table className="min-w-full table-auto">
         <thead className="bg-gray-700">
           <tr>
